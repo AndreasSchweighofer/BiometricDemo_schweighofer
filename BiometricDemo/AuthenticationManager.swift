@@ -19,6 +19,8 @@ class AuthenticationManager {
     
     func authenticateBiometrics(completion: @escaping (Bool) -> Void) {
         let reason = "Authentifizieren um den Inhalt zu sehen"
+        
+        // using deviceOwnerAuthentication to use passcode validation if biometrics fails
         context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (success, error) in
             DispatchQueue.main.async {
                 if success {
