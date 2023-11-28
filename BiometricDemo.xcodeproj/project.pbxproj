@@ -11,6 +11,7 @@
 		352EFE4E2B14DA9A00B214CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352EFE4D2B14DA9A00B214CE /* ContentView.swift */; };
 		352EFE502B14DA9C00B214CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352EFE4F2B14DA9C00B214CE /* Assets.xcassets */; };
 		352EFE532B14DA9C00B214CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352EFE522B14DA9C00B214CE /* Preview Assets.xcassets */; };
+		352EFE5A2B14DDF200B214CE /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352EFE592B14DDF200B214CE /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		352EFE4D2B14DA9A00B214CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		352EFE4F2B14DA9C00B214CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352EFE522B14DA9C00B214CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		352EFE592B14DDF200B214CE /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				352EFE4D2B14DA9A00B214CE /* ContentView.swift */,
 				352EFE4F2B14DA9C00B214CE /* Assets.xcassets */,
 				352EFE512B14DA9C00B214CE /* Preview Content */,
+				352EFE592B14DDF200B214CE /* AuthenticationManager.swift */,
 			);
 			path = BiometricDemo;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352EFE5A2B14DDF200B214CE /* AuthenticationManager.swift in Sources */,
 				352EFE4E2B14DA9A00B214CE /* ContentView.swift in Sources */,
 				352EFE4C2B14DA9A00B214CE /* BiometricDemoApp.swift in Sources */,
 			);
@@ -274,6 +278,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BiometricDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need Face ID.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +307,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BiometricDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need Face ID.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

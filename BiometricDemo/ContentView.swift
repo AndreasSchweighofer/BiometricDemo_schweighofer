@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var status = "Gesperrt"
+    let authenticationManager = AuthenticationManager()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(status).padding()
+            Button("Anmelden") {
+                authenticate()
+            }
         }
         .padding()
+        .onAppear {
+            authenticate()
+        }
+    }
+    
+    func authenticate() {
+        if authenticationManager.canUseBiometrics() {
+            authenticationManager.authenticateBiometrics { success in
+                if success {
+                    self.updateText()
+                }
+            }
+        }
+    }
+        
+    
+    func updateText() {
+        self.status = "Entsperrt"
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
