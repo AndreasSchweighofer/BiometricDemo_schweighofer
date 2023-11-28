@@ -29,16 +29,14 @@ struct ContentView: View {
         if authenticationManager.canUseBiometrics() {
             authenticationManager.authenticateBiometrics { success in
                 if success {
-                    self.updateText()
+                    self.status = "Entsperrt"
+                } else {
+                    self.status = "Gesperrt"
                 }
             }
         }
     }
-        
     
-    func updateText() {
-        self.status = "Entsperrt"
-    }
 }
 
 #Preview {
