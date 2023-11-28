@@ -30,8 +30,6 @@ struct ContentView: View {
             authenticationManager.authenticateBiometrics { success in
                 if success {
                     self.status = "Entsperrt"
-                } else {
-                    self.status = "Gesperrt"
                 }
             }
         }
